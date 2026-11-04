@@ -87,3 +87,39 @@ button:disabled { opacity: 0.4; }
   font-size: 0.8rem;
   opacity: 0.3;
 }
+
+/* Namensfeld (gleicher Stil wie das Textfeld) */
+input {
+  display: block;
+  width: 100%;
+  padding: 0.9rem;
+  font: inherit;
+  font-size: 1.1rem;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #444;
+  border-radius: 0;
+  outline: none;
+}
+ 
+input:focus { border-color: #fff; }
+
+/* Farbpunkte */
+#palette { display: flex; gap: 0.6rem; margin: 1rem 0; }
+.swatch {
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+.swatch.selected { border-color: #fff; box-shadow: 0 0 0 2px #000 inset; }
+
+/* Name über der Nachricht auf dem Display */
+#messages .name {
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-bottom: 0.2rem;
+}
